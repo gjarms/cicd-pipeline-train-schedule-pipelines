@@ -7,6 +7,9 @@ stages {
     sh './gradlew build --no-daemon'
     archiveArtifacts artifacts: 'dist/trainSchedule.zip'
    }
+    steps {
+      echo 'second step'
+    }
   }
  }
 }
